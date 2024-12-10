@@ -1,0 +1,79 @@
+.alersWrap{
+    position: relative;
+    height: calc(100svh - 165px);
+    overflow-y: auto;
+    .alertCard{
+        position: relative;
+        padding: 20px;
+        padding-bottom: 0;
+        .day {
+            position: relative;
+            margin-bottom: 20px;
+            p{
+                font-size: 16px;
+                line-height: 20px;
+                font-weight: 500;
+                color: $orange;
+            }
+        }
+        .alertList{
+            position: relative;
+            margin-bottom: 20px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid rgba($black,0.3);
+            &_name{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-bottom: 10px;
+                h5{
+                    font-size: 16px;
+                    line-height: 20px;
+                    font-weight: 500;
+                }
+                p{
+                    font-size: 12px;
+                    line-height: 18px;
+                    color: rgba($color: $black, $alpha: 0.7);
+                    font-weight: 300;
+                }
+            }
+            &_cnt{
+                p{
+                    font-size: 12px;
+                    line-height: 16px;
+                    font-weight: 400;
+                    color: rgba($black,0.6);
+                }
+            }
+        }
+    }
+}
+
+.modalName{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    h5{
+        font-size: 20px;
+        line-height: 22px;
+        margin-right: 20px;
+    }
+    p{
+        font-size: 14px;
+        line-height: 22px;
+        font-weight: 300;
+        color: rgba($black,0.6);
+        margin-bottom: 0;
+    }
+}
+.modalBody{
+    p{
+        font-size: 14px;
+        line-height: 20px;
+        font-weight: 400;
+        color: rgba($black,0.6);
+    }
+}

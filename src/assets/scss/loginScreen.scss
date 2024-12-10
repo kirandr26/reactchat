@@ -1,0 +1,74 @@
+.loadingScreen{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-position: center;
+    background-repeat: no-repeat;
+    &_logo{
+        img{
+            max-width: 150px;
+            animation: scaleAndRotate 3s ease-in-out;
+            transform-origin: center;
+        }
+    }
+    &_footer{
+        position: absolute;
+        bottom: 30px;
+        p{
+            color: rgba($color: #fff, $alpha: 0.9);
+        }
+    }
+}
+.loginScreen{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+.loginWrap{
+    position: relative;
+    width: 100%;
+    height: calc(100vh - 90px);
+    overflow: hidden;
+    .loginTxt{
+        h3{
+            font-size: 24px;
+            line-height: 30px;
+            font-weight: 500;
+            color: $blue;
+            margin-bottom: 15px;
+        }
+        p{
+            color: rgba($color: $black, $alpha: 0.8);
+            margin-bottom: 25px;
+        }
+    }
+    .logInForm{
+        .forgotPassLink{
+            margin: 20px 0;
+            text-align: right;
+        }
+        .inputWrap{
+            &.btnWrap{
+                margin-bottom: 0;
+                position: fixed;
+                bottom: 30px;
+                
+                width: calc(100% - 40px);
+            }
+        }
+    }
+}
+
+
+@keyframes scaleAndRotate {
+    0% {
+      transform: scale(0) rotate(180deg); 
+    }
+    100% {
+      transform: scale(1) rotate(360deg); 
+    }
+  }

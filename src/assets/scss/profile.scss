@@ -1,0 +1,64 @@
+.profile{
+    position: relative;
+    height: 100svh;
+    overflow-y: auto;
+    .profileHeader{
+        z-index: 2;
+    }
+    &_img{
+        position: fixed;
+        border: 3px solid $white;
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        left: 50%;
+        transform: translate(-50%, - 50px);
+        margin-top: 160px;
+        z-index: 3;
+        background-color: $white;
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    &_info{
+        position: relative;
+        padding: 20px;
+        padding-top: 0;
+        margin-top: 260px;
+        .inputWrap{
+            margin-bottom: 15px;
+            label{
+                font-size: 14px;
+                line-height: 20px;
+                font-weight: 300;
+            }
+            .formInput{
+                position: relative;
+                padding: 15px 20px;
+                background: #D9D9D980;
+                border-radius: 5px;
+                margin-top: 5px;
+                font-size: 16px;
+                line-height: 20px;
+
+            }
+        }
+    }
+}
+
+.iconInputWrap{
+    position: relative;
+    .formInput{
+        padding-right: 40px;
+    }
+    i{
+        font-size: 16px;
+        position: absolute;
+        right: 20px;
+        top: 50%;
+        transform: translateY(-50%);
+        color: #969696;
+    }
+}
